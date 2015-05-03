@@ -71,6 +71,6 @@ def getRepoZip(userName, repoName, downDir = os.getcwd()):
     fileWrite(data, downDir, fileName)
 
 def fileWrite(data, folderDir, fileName):
-    File = open(os.path.join(folderDir, fileName), 'w')
+    File = open(os.path.join(folderDir, fileName), 'wb')
     File.write(data)
     File.close()
