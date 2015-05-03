@@ -23,7 +23,6 @@ for repoFile in repoFileList:
 
 print ''
 print 'Getting repo %s ...' % repoName,
-#path = os.path.join(os.getcwd(), 'os)
 gitapi.getRepo(userName, repoName, downDir = 'testResults')
 
 print 'Got it\nGetting the zip version now ...',
