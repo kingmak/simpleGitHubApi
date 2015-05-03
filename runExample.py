@@ -1,5 +1,7 @@
-import simpleGitHubApi as gitapi
+import os, simpleGitHubApi as gitapi
 
+os.chdir(os.getcwd())
+os.mkdir('testResults')
 userName = 'kingmak'
 
 repoCount = gitapi.getRepoCount(userName)
@@ -21,8 +23,9 @@ for repoFile in repoFileList:
 
 print ''
 print 'Getting repo %s ...' % repoName,
-gitapi.getRepo(userName, repoName)
+#path = os.path.join(os.getcwd(), 'os)
+gitapi.getRepo(userName, repoName, downDir = 'testResults')
 
 print 'Got it\nGetting the zip version now ...',
-gitapi.getRepoZip(userName, repoName)
+gitapi.getRepoZip(userName, repoName, downDir = 'testResults')
 print 'Got it\nTesting Done'
