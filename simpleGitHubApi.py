@@ -40,7 +40,7 @@ def getRepoFileList(userName, repoName, giveLink = True):
     return repoFileList
 
 def getFile(fileLink):
-    fileLink = re.sub('github', 'raw.github', fileLink)
+    fileLink = fileLink.replace('github', 'raw.github', 1)
     blob = fileLink.find('blob')
     fileLink = fileLink[:blob] + fileLink[blob + 5:]
     return fileLink
