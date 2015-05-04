@@ -1,3 +1,2 @@
-1) fix getFile (fileLink = fileLink.replace('github', 'raw.github', 1))
-2) try catch the os.mkdir in runExample
-3) document how to use in readme
+- try catch the os.mkdir in runExample
+- document how to use in readme
