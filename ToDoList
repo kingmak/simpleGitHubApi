@@ -1,4 +1,4 @@
 - try catch the os.mkdir in runExample
 - document how to use in readme
 - IMPORTANT: getRepoFileList doesn't give folders in the list
-- IMPORTANT: need to walk above folders (means needs to create those folders in the requested dir n place files in em)
+- IMPORTANT: need to walk above folders (need to create those folders in the requested dir n place files in em)
