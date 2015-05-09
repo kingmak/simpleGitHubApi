@@ -1,0 +1,20 @@
+import os
+
+def walk(directory, spaceCount = 0):
+    dirList = os.listdir(directory)
+
+    for path in dirList:
+
+        joinDir = os.path.join(directory, path)
+        
+        if os.path.isfile(joinDir):
+            print spaceCount * ' ' + '- ' + path
+            
+        elif os.path.isdir(joinDir):
+            print spaceCount * ' ' + '* ' + path
+            walk(joinDir, spaceCount + 1)
+
+        else:
+            print 'SOMETHING IS BROKEN, path is = ' + path
+        
+walk(os.getcwd())
