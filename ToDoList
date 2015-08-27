@@ -5,3 +5,9 @@
   <span class="css-truncate css-truncate-target"><a href="/WestleyArgentum/GitHub.jl/tree/master/test"
   file = blob, folder = tree
 - files that have spaces in the name have %20, do something about dat
+
+- DESIGN:
+* Use a class
+* Fix import leaks (os, urllib2 showing from simpleGitHubApi.py in the example file)
+* Private and Public functions (currently to be private functions are showing)
+* userName is required for every function, in the class structure make that a global private var? (so provide once)
